@@ -15,10 +15,10 @@ def test_make_operations():
     second_list = load_file(FILE_URL_TEST)
 
     for object in make_operations(first_list):
-        assert type(object) is src.operation.Operation
+        assert type(object) is src.operations.Operation
 
     for object in make_operations(second_list):
-        assert type(object) is src.operation.Operation
+        assert type(object) is src.operations.Operation
 
     assert make_operations(second_list)[0].get_id() == 441945886
     assert make_operations(second_list)[0].get_date() == "26.08.2019"
